@@ -5,16 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/style.css">    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script 
+    src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Ricardo-->
     <header>
-        <nav></nav>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Start Bootstrap</a></li>
+                <li class="nav-item"><a href="#">Portfolio</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!--Ricardo-->
-        <section class="start-section"></section>
+        <section class="start-section">
+            <div class="container-start-section">
+                <img class="avatar" src="assets/img/avataaars.svg" alt=""/>
+                <h1 class="title-start-section">Start Bootstrap</h1>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-line"></div>
+                </div>
+            <p class="subheading">Graphic Artist - Web Designer Illustrator</p>        
+            </div>
+        </section>
 
         <!--Ing. Hector-->
         <section></section>
@@ -43,5 +68,17 @@
         </section>
     </footer>
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+        $(".nav-toggle").on("click", function() {
+            if ($(".nav-item").hasClass("active")) {
+                $(".nav-item").removeClass("active");
+            } else {
+                $(".nav-item").addClass("active");
+            }
+        });
+    });
+    </script>
+    
 </body>
 </html>
