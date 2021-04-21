@@ -1,234 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-    <link rel="preload" href="public/normalize.css" as="style" />
-    <link rel="stylesheet" href="public/normalize.css" />
-    <link rel="preload" href="public/style.css" as="style" />
-    <link rel="stylesheet" href="public/style.css" />
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"> </script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="public/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
     <!--Ricardo-->
     <header>
-      <nav></nav>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Start Bootstrap</a></li>
+                <li class="nav-item"><a href="#">Portfolio</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <!--Ricardo-->
-      <section class="start-section"></section>
+        <!--Ricardo-->
+        <section class="start-section">
+            <div class="container-start-section">
+                <img class="avatar" src="assets/img/avataaars.svg" alt="" />
+                <h1 class="title-start-section">Start Bootstrap</h1>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-line"></div>
+                </div>
+                <p class="subheading">Graphic Artist - Web Designer Illustrator</p>
+            </div>
+        </section>
 
-      <!--Ing. Hector-->
-      <section class="portfolio">
-        <h1 class="title">Portfolio</h1>
-        <div class="star">
-          <div class="star-line"></div>
-          <div class="star-icon"><i class="fas fa-star"></i></div>
-          <div class="star-line"></div>
-        </div>
-
-        <div class="cards">
-          <div class="card" id="modal">
-            <img src="assets/img/cabin.png" alt="imagen" />
-          </div>
-          <div class="card" id="modal2">
-            <img src="assets/img/cake.png" alt="imagen" />
-          </div>
-          <div class="card" id="modal3">
-            <img src="assets/img/circus.png" alt="imagen" />
-          </div>
-          <div class="card" id="modal4">
-            <img src="assets/img/game.png" alt="imagen" />
-          </div>
-          <div class="card" id="modal5">
-            <img src="assets/img/safe.png  " alt="imagen" />
-          </div>
-          <div class="card" id="modal6">
-            <img src="assets/img/submarine.png" alt="imagen" />
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h1 class="title">Log cabin</h1>
-              <div class="star">
+        <!--Ing. Hector-->
+        <section class="portfolio">
+            <h1 class="title">Portfolio</h1>
+            <div class="star">
                 <div class="star-line"></div>
                 <div class="star-icon"><i class="fas fa-star"></i></div>
                 <div class="star-line"></div>
-              </div>
             </div>
-            <div class="modal-body">
-              <img class="modal-img" src="assets/img/cabin.png" alt="" />
-              <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-              </p>
 
-              <button class="button">X Close Window</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div id="myModal2" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <h1 class="title">tasty cake</h1>
-                <div class="star">
-                  <div class="star-line"></div>
-                  <div class="star-icon"><i class="fas fa-star"></i></div>
-                  <div class="star-line"></div>
+            <div class="cards">
+                <div class="card" id="modal">
+                    <img src="assets/img/cabin.png" alt="imagen" />
                 </div>
-              </div>
-              <div class="modal-body">
-                <img class="modal-img" src="assets/img/cake.png" alt="" />
-                <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                </p>
-  
-                <button class="button">X Close Window</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal -->
-        <div id="myModal3" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <h1 class="title">circus tent</h1>
-                <div class="star">
-                  <div class="star-line"></div>
-                  <div class="star-icon"><i class="fas fa-star"></i></div>
-                  <div class="star-line"></div>
+                <div class="card" id="modal2">
+                    <img src="assets/img/cake.png" alt="imagen" />
                 </div>
-              </div>
-              <div class="modal-body">
-                <img class="modal-img" src="assets/img/circus.png" alt="" />
-                <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                </p>
-  
-                <button class="button">X Close Window</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal -->
-        <div id="myModal4" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <h1 class="title">controller</h1>
-                <div class="star">
-                  <div class="star-line"></div>
-                  <div class="star-icon"><i class="fas fa-star"></i></div>
-                  <div class="star-line"></div>
+                <div class="card" id="modal3">
+                    <img src="assets/img/circus.png" alt="imagen" />
                 </div>
-              </div>
-              <div class="modal-body">
-                <img class="modal-img" src="assets/img/game.png" alt="" />
-                <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                </p>
-  
-                <button class="button">X Close Window</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal -->
-        <div id="myModal5" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <span class="close">&times;</span>
-                <h1 class="title">Locked safe</h1>
-                <div class="star">
-                  <div class="star-line"></div>
-                  <div class="star-icon"><i class="fas fa-star"></i></div>
-                  <div class="star-line"></div>
+                <div class="card" id="modal4">
+                    <img src="assets/img/game.png" alt="imagen" />
                 </div>
-              </div>
-              <div class="modal-body">
-                <img class="modal-img" src="assets/img/safe.png" alt="" />
-                <p class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                </p>
-  
-                <button class="button">X Close Window</button>
-              </div>
+                <div class="card" id="modal5">
+                    <img src="assets/img/safe.png  " alt="imagen" />
+                </div>
+                <div class="card" id="modal6">
+                    <img src="assets/img/submarine.png" alt="imagen" />
+                </div>
             </div>
-          </div>
 
-          <!-- Modal -->
-        <div id="myModal6" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h1 class="title">submarine</h1>
-              <div class="star">
-                <div class="star-line"></div>
-                <div class="star-icon"><i class="fas fa-star"></i></div>
-                <div class="star-line"></div>
-              </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h1 class="title">Log cabin</h1>
+                        <div class="star">
+                            <div class="star-line"></div>
+                            <div class="star-icon"><i class="fas fa-star"></i></div>
+                            <div class="star-line"></div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/img/cabin.png" alt="" />
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                        </p>
+
+                        <button class="button">X Close Window</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              <img class="modal-img" src="assets/img/submarine.png" alt="" />
-              <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-              </p>
 
-              <button class="button">X Close Window</button>
+            <!-- Modal -->
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h1 class="title">tasty cake</h1>
+                        <div class="star">
+                            <div class="star-line"></div>
+                            <div class="star-icon"><i class="fas fa-star"></i></div>
+                            <div class="star-line"></div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/img/cake.png" alt="" />
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                        </p>
+
+                        <button class="button">X Close Window</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-      </section>
+            <!-- Modal -->
+            <div id="myModal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h1 class="title">circus tent</h1>
+                        <div class="star">
+                            <div class="star-line"></div>
+                            <div class="star-icon"><i class="fas fa-star"></i></div>
+                            <div class="star-line"></div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/img/circus.png" alt="" />
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                        </p>
 
-      <section class="about">
-          <div class="container">
-        <h1 class="title title-about">about</h1>
-        <div class="star">
-          <div class="star-line star-line-white"></div>
-          <div class="star-icon-white"><i class="fas fa-star"></i></div>
-          <div class="star-line star-line-white"></div>
-        </div>
+                        <button class="button">X Close Window</button>
+                    </div>
+                </div>
+            </div>
 
-        <div class="text-about"> 
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
-        <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
-        </div>
-        <div class="container-btn">
-        <a class="btn" href="#">
-            <i class="fas fa-download"></i>
-            Free Download!
-        </a>
-    </div>
+            <!-- Modal -->
+            <div id="myModal4" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h1 class="title">controller</h1>
+                        <div class="star">
+                            <div class="star-line"></div>
+                            <div class="star-icon"><i class="fas fa-star"></i></div>
+                            <div class="star-line"></div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/img/game.png" alt="" />
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                        </p>
 
-    </div>
-      </section>
+                        <button class="button">X Close Window</button>
+                    </div>
+                </div>
+            </div>
 
-      <!--Vladimir-->
-      <section>
-        <form action=""></form>
-      </section>
+            <!-- Modal -->
+            <div id="myModal5" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h1 class="title">Locked safe</h1>
+                        <div class="star">
+                            <div class="star-line"></div>
+                            <div class="star-icon"><i class="fas fa-star"></i></div>
+                            <div class="star-line"></div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/img/safe.png" alt="" />
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                        </p>
+
+                        <button class="button">X Close Window</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal6" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h1 class="title">submarine</h1>
+                        <div class="star">
+                            <div class="star-line"></div>
+                            <div class="star-icon"><i class="fas fa-star"></i></div>
+                            <div class="star-line"></div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/img/submarine.png" alt="" />
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam,recusandae quos quis inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                        </p>
+
+                        <button class="button">X Close Window</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about">
+            <div class="container-about">
+                <h1 class="title title-about">about</h1>
+                <div class="star">
+                    <div class="star-line star-line-white"></div>
+                    <div class="star-icon-white"><i class="fas fa-star"></i></div>
+                    <div class="star-line star-line-white"></div>
+                </div>
+
+                <div class="text-about">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                        complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets
+                        for easy customization.</p>
+                    <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add
+                        your email address to the contact form to make it fully functional!</p>
+                </div>
+                <div class="container-btn">
+                    <a class="btn" href="#">
+                        <i class="fas fa-download"></i>
+                        Free Download!
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Vladimir-->
+        <section class="container">
+            <form action="" class="contact-me">
+                <h1>CONTACT ME</h1>
+                <span><i class="fa fa-star fa-2x"></i></span>
+                <br>
+                <div class="info-contact">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                    <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number">
+                    <textarea name="message" id="message" cols="20" rows="7" placeholder="Message"></textarea>
+                    <input type="submit" class="form-control" class="btn btn-success" value="Send">
+                </div>
+            </form>
+        </section>
     </main>
     <!--Vladimir-->
     <footer>
-      <section></section>
-    </footer>
+        <section>
 
+        </section>
+    </footer>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".nav-toggle").on("click", function () {
+                if ($(".nav-item").hasClass("active")) {
+                    $(".nav-item").removeClass("active");
+                } else {
+                    $(".nav-item").addClass("active");
+                }
+            });
+        });
+    </script>
     <script src="app.js"></script>
-  </body>
+
+</body>
+
 </html>
