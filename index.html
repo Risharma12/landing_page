@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="public/style.css">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script 
+    src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Ricardo-->
     <header>
-        <nav></nav>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Start Bootstrap</a></li>
+                <li class="nav-item"><a href="#">Portfolio</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!--Ricardo-->
@@ -29,6 +44,18 @@
     <footer>
         <section></section>
     </footer>
+    
+    <script>
+        $(function() {
+        $(".nav-toggle").on("click", function() {
+            if ($(".nav-item").hasClass("active")) {
+                $(".nav-item").removeClass("active");
+            } else {
+                $(".nav-item").addClass("active");
+            }
+        });
+    });
+    </script>
     
 </body>
 </html>
