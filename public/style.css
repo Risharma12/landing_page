@@ -478,7 +478,7 @@ border-color: var(--blanco);
 /*Footer - Vladimir*/
 /**************************** CONTACT ME ***********************/
 
-.container{
+.contact-container{
     padding: 4rem;
     border: 1px solid black;
 }
@@ -522,6 +522,7 @@ span > *{
 }
 /** Flex item **/
 .form-control{
+  width: 100%;
     flex-basis: 50px;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -530,7 +531,11 @@ span > *{
     border-bottom: 1px solid rgba(0,0,0,0.1);
     opacity: 0.8;
 }
+.alert-form{
+  color: red;
+}
 textarea{
+    width: 100%;
     border: 0;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     font-size: 22px;
@@ -556,4 +561,66 @@ input[type='submit']{
 }
 input[type='submit']:hover{
     background: #27a088;
+}
+/* Footer */
+.footer-1{
+  display: grid;
+  color: white;
+  background: var(--secondary);
+  padding: 3rem;
+  grid-template-columns: repeat(3,1fr);
+}
+.social{
+  display: flex;
+}
+.social > *{
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+.about-freelancer a{
+ color: #1ab889;
+}
+.footer-2{
+  background: #1a252f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+.location{
+  font-size: 1.2rem;
+
+}
+.about-freelancer{
+  font-size: 1.2rem;
+}
+@media(max-width: 990px){
+  .footer-1{
+    display: grid;
+    color: white;
+    background: var(--secondary);
+    padding: 3rem;
+    grid-template-areas: 
+    "location""around""about-freelancer";
+    grid-gap: 50px;
+  }
+  .location{
+    grid-area: location;
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+  .around{
+    grid-area: around;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .about-freelancer{
+    grid-area: about-freelancer;
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }

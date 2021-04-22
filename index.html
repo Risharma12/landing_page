@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
     <link rel="stylesheet" href="public/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -255,28 +253,84 @@
         </section>
 
         <!--Vladimir-->
-        <section class="container">
+        <section class="contact-container" id="contact">
             <form action="" class="contact-me">
                 <h1>CONTACT ME</h1>
                 <span><i class="fa fa-star fa-2x"></i></span>
                 <br>
                 <div class="info-contact">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
-                    <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number">
-                    <textarea name="message" id="message" cols="20" rows="7" placeholder="Message"></textarea>
-                    <input type="submit" class="form-control" class="btn btn-success" value="Send">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" 
+                    required pattern="[A-Za-z]+" title="Escribe solo letras">
+                        <p>
+                            <ul class="alert-form name" hidden>
+                                <li>Ingresa tu nombre</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" 
+                        required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+                        title="Escribe un correo valido">
+                        <p>
+                            <ul class="alert-form email" hidden>
+                                <li>Ingresa tu email</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="form-control" name="number" id="number" placeholder="Phone Number" required>
+                        <p>
+                            <ul class="alert-form number" hidden>
+                                <li>Ingresa tu numero de telefono</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" id="message" cols="20" rows="7" placeholder="Message" required></textarea>
+                        <p>
+                            <ul class="alert-form message" hidden>
+                                <li>Ingresa un mensaje</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <input type="submit" class="form-control"  id="btn-form" value="Send">
                 </div>
             </form>
         </section>
     </main>
     <!--Vladimir-->
     <footer>
-        <section>
-
+        <section class="footer-container">
+            <div class="footer-1">
+                <div class="location">
+                    <h2>LOCATION</h2><br>
+                    <p>2215 John Daniel Drive
+                        Clark, MO 65243</p>
+                </div>
+                <div class="around">
+                    <h2>AROUND THE WEB</h2><br>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-lg" ></i></a>
+                        <a href=""><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="about-freelancer">
+                    <h2>ABOUT FREELANCER</h2><br>
+                    <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a></p>
+                </div>
+            </div>
+            <div class="footer-2">
+                <p>Copyright &copy; Website 2021</p>
+            </div>
         </section>
     </footer>
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script>
         $(function () {
             $(".nav-toggle").on("click", function () {

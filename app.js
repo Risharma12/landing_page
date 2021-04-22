@@ -131,3 +131,32 @@ window.onclick = function(event) {
 }
 
 /////
+/* Validaciones de formularios */
+
+$('#btn-form').click(function(){
+  const name = $("#name").val();
+  const email = $("#email").val();
+  const telefono = $("#number").val();
+  const message = $("#message").val();
+
+  if (name.length == 0) {
+    $('.name').show();
+  } else {
+    $('.name').hide();
+  }
+  if (email.length == 0) {
+    $('.email').show();
+  } else {
+    $('.email').hide();
+  }
+  if (telefono.length == 0) {
+    $('.number').show();
+  } else {
+    $('.number').hide();
+  }
+  if (message.length == 0) {
+    $('.message').show();
+  } else {
+    $('.message').hide();
+  }
+});
