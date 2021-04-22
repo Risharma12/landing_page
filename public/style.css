@@ -480,7 +480,6 @@ border-color: var(--blanco);
 
 .contact-container{
     padding: 4rem;
-    border: 1px solid black;
 }
 
 /**************** Flex container ****************/
@@ -494,12 +493,14 @@ border-color: var(--blanco);
 .contact-me h1{
     text-align: center;
     color: var(--secondary);
-    font-size: 35px;
+    font-size: 50px;
+    letter-spacing: 2px;
 }
 
 /*icon start*/
 span{
    display: flex;
+   width: 100%;
    justify-content: center;
 }
 span > *{
@@ -508,7 +509,7 @@ span > *{
 .contact-me span::before, span::after{
     content: '';
     border-bottom: 4px solid var(--secondary);
-    width: 7em;
+    width: 10%;
     margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 15px;
@@ -594,6 +595,34 @@ input[type='submit']:hover{
 }
 .about-freelancer{
   font-size: 1.2rem;
+}
+@media(max-width: 990px){
+  .contact-container{
+    padding: 0;
+    padding-top: 4rem;
+}
+
+  .contact-me .info-contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+.contact-me span::before, span::after{
+  content: '';
+  border-bottom: 4px solid var(--secondary);
+  width: 25%;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.contact-me h1{
+  text-align: center;
+  color: var(--secondary);
+  font-size: 2.5rem;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
 }
 @media(max-width: 990px){
   .footer-1{
